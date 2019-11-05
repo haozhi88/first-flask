@@ -2,10 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>{name}'s profile</title>
+    <title>{{ name }}'s profile</title>
   </head>
 
   <body>
+    {% if signed_in %}
+    <button>Log out</button>
+    {% else %}
+    <button>Log in</button>
+    {% endif %}
     <h1>Hi, my name is {{ name }}!</h1>
     <img src="../static/images/xmen.jpg" />
   </body>
