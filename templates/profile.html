@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>{{ name }}'s profile</title>
+    <link rel="stylesheet" href="../static/css/profile.css" />
   </head>
 
   <body>
@@ -11,7 +12,11 @@
     {% else %}
     <button>Log in</button>
     {% endif %}
+
     <h1>Hi, my name is {{ name }}!</h1>
-    <img src="../static/images/xmen.jpg" />
+
+    {% for i in range(0,num) %}
+    <img id="profile-img" src="../static/images/xmen.jpg" />
+    {% endfor %}
   </body>
 </html>
