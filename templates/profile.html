@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <title>{{ name }}'s profile</title>
     <link rel="stylesheet" href="../static/css/profile.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='../static/css/profile.css') }}"
+    /> -->
   </head>
 
   <body>
@@ -13,7 +17,7 @@
     <button>Log in</button>
     {% endif %}
 
-    <h1>Hi, my name is {{ name }}!</h1>
+    <h1>Hi, my name is {{ name }}!!!!!</h1>
 
     {% for i in range(0,num) %}
     <img id="profile-img" src="../static/images/xmen.jpg" />
